@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1fd20f</color>
+    <color name="colorPrimaryDark">#80f5ed</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#13f186</color>
+    <color name="colorAccent">#4cf551</color>
+    <color name="registerBg">#2e3237</color>
+    <color name="bgT">#3b4148</color>
+
+
+    <color name="input">#222222</color>
+    <color name="input_hint">#999999</color>
+
+
+
+</resources>

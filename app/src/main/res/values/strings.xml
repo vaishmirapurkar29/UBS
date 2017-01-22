@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">UBaS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="spinner_title">Type Category</string>
+    <string name="prevFrag">PARENT_FRAGMENT</string>
+    <string name="clubName">CLUB</string>
+
+    <string-array name="planets_array">
+        <item>Electronics</item>
+        <item>Clothing</item>
+        <item>Food</item>
+        <item>Household</item>
+        <item>Books</item>
+        <item>MusicIntruments</item>
+        <item>SportingGoods</item>
+    </string-array>
+
+</resources>

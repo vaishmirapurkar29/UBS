@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1ed887"
+    tools:context="app.com.example.android.UBaS.PaymentActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/paypallogo"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:padding="15dp"
+        android:layout_below="@+id/cardNum"
+        android:layout_marginTop="49dp"
+        android:id="@+id/expDate"
+        android:hint="Exp Date: MM/DD/YY"
+        android:gravity="center_horizontal"
+        android:textColor="@color/input"
+        android:textColorHint="@color/input_hint"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/cardNum"
+        android:hint="Credit Card Number"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/input"
+        android:background="#ffffff"
+        android:textColorHint="@color/input_hint"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/expDate"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="PAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pay"
+        android:textSize="18sp"
+        android:textColor="@color/cardview_light_background"
+        android:fontFamily="serif"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="63dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="CANCEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="serif"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:background="@android:color/holo_blue_light" />
+
+</RelativeLayout>

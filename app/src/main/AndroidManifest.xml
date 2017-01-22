@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.com.example.android.UBaS">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".UBas"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DesignDemo">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.categoty.HOME" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailBuy"
+            android:parentActivityName=".HomeScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailBorrow"
+            android:parentActivityName=".HomeScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailExchange"
+            android:parentActivityName=".HomeScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TakeItemPic"
+            android:parentActivityName=".HomeScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+        </activity>
+        <activity android:name=".LendItem" />
+        <activity android:name=".ExchangeItem" />
+        <activity android:name=".PaymentActivity" />
+        <activity
+            android:name=".SellPost"
+            android:parentActivityName=".TakeItemPic"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".LendPost"
+            android:parentActivityName=".TakeItemPic"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".ExchangePost"
+            android:parentActivityName=".TakeItemPic"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+        </activity>
+        <activity android:name=".MyClubs" />
+        <activity
+            android:name=".ClubDetail"
+            android:parentActivityName=".MyClubs"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateClub"
+            android:parentActivityName=".MyClubs"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".ClubPost"
+            android:parentActivityName=".ClubDetail"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".EmailAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.example.android.UBaS.HomeScreen" />
+        </activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ChangePassword"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="app.com.example.android.UBaS.ProfileActivity"
+    android:background="#3ff4ee">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:textSize="20sp"
+        android:id="@+id/name"
+        android:background="@color/cardview_shadow_end_color" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/name"
+        android:textSize="20sp"
+        android:id="@+id/email"
+        android:background="@color/cardview_shadow_end_color" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/email"
+        android:layout_marginBottom="113dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:id="@+id/ID"
+        android:background="@color/cardview_shadow_end_color" />
+
+    <TextView
+        android:text="Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/email"
+        android:layout_alignBottom="@id/email"
+        android:padding="20dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text="UTAID:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/ID"
+        android:padding="20dp"
+        android:id="@+id/textView4"
+        android:layout_alignBottom="@+id/ID" />
+
+    <TextView
+        android:text="My Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        android:padding="20dp"
+
+        android:textSize="23sp"
+        android:id="@+id/profileTop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="cursive" />
+
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@android:color/holo_red_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

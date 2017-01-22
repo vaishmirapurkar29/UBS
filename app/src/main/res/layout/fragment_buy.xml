@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="0dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp">
+
+    </GridView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        >
+
+        <Button
+            android:text="SELL"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:id="@+id/sell"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5" />
+
+    </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="#FFF000"--><!--tools:context="UBaSS.buyBorrowExchange.Fragment_Buy">-->
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;--><!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:text="THIS is Fragment_Buy"--><!--android:layout_margin="20dp"/>-->
+
+    <!--</FrameLayout>-->
